@@ -69,6 +69,10 @@ function(hljs) {
       },
       {
         begin: '\\.' + hljs.IDENT_RE, relevance: 0 // hack: prevents detection of keywords after dots
+      },
+      {
+        className: 'object-key',
+        begin: /\w+\:/,
       }
     ]
   };
